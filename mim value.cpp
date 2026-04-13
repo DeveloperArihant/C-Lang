@@ -1,24 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    
-    int a;
-    int a1;
-    
-    printf("Enter the first value: ");
+int main() {
+
+    int a, b, c;
+
+    printf("Enter first value: ");
     scanf("%d", &a);
-    
-    printf("Enter the second value: ");
-    scanf("%d", &a1);
-    
-    // Check minimum value
-    
-    if(a < a1){
-        printf("Minimum value is: %d\n", a);
-    }
-    else{
-        printf("Minimum value is: %d\n", a1);
-    }
-    
+
+    printf("Enter second value: ");
+    scanf("%d", &b);
+
+    printf("Enter third value: ");
+    scanf("%d", &c);
+
+    (a < b)
+        ? ((a < c)
+		 ? printf("Smallest number is: %d", a)
+          : printf("Smallest number is: %d", c))
+        : ((b < c)
+		 ? printf("Smallest number is: %d", b)
+         : printf("Smallest number is: %d", c));
+
     return 0;
 }
