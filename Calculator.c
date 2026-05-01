@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
+
 
 void show_menu() {
     printf("\n----- Calculator -----\n");
